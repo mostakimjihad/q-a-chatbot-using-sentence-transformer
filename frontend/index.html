@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 5px;
+        }
+        .message {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            margin-top: 10px;
+            justify-content: flex-end; /* Default to align messages to the right */
+        }
+
+        .message.bot {
+            justify-content: flex-start; /* Align bot messages to the left */
+        }
+        .message-content {
+            max-width: 70%;
+            padding: 8px 12px;
+            border-radius: 12px;
+        }
+        .message.bot .message-content {
+            background-color: #e5e7eb; /* Gray 200 */
+            color: #000;
+        }
+        .message.user .message-content {
+            background-color: #2563eb; /* Blue 600 */
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <h1 class="p-5 text-center text-2xl font-semibold">Chatbot Demo</h1>
+
+    <div id="chatbot-container"></div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
