@@ -10,7 +10,7 @@ simple chatbot with similarity
 * How to run the program
 * Step-by-step bullets
 ```
-git clone https://github.com/kirito-mysoft/chatbot
+git clone https://github.com/kirito-mysoft/chatbot](https://github.com/mostakimjihad/q-a-chatbot-using-sentence-transformer
 ```
 ```
 pip install -r requirements.txt
